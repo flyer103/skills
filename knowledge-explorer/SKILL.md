@@ -1,6 +1,6 @@
 ---
 name: knowledge-explorer
-description: 系统化知识探索 - 收集资料、构建知识树、图示化、同步到笔记应用。使用方法：直接说"探索 [主题]"或"学习 [主题]"
+description: 系统化知识探索 - 收集资料、构建知识树、图示化、同步到笔记应用。触发词：探索 [主题]、学习 [主题]、研究 [主题]、调研 [主题]、帮我了解 [主题]、系统学习 [主题]
 version: 1.1
 author: OpenClaw Community
 ---
