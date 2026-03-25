@@ -7,7 +7,6 @@
 - [Android 控制 (android-control)](#android-control)
 - [知识探索 (knowledge-explorer)](#knowledge-explorer)
 - [使用方式](#使用方式)
-- [贡献](#贡献)
 
 ## Skills
 
