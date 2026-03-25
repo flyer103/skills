@@ -1,6 +1,6 @@
 # Skills Collection
 
-这是我日常使用和探索过程中积累的 Claude Code skills 集合。
+这是我日常使用和探索过程中积累的 openclaw skills 集合。
 
 ## 📋 目录
 
@@ -67,15 +67,11 @@
 
 ## 使用方式
 
-1. 将 `skills/` 目录添加到你的 Claude Code 配置路径中
+1. 将 `skills/` 目录添加到你的 openclaw 配置路径中
 2. 使用相应的触发词激活对应的 skill
 3. 按照提示完成交互
 
 每个 skill 都会自动执行相应的任务，并提供详细的输出和文档。
-
-## 贡献
-
-欢迎提交 issue 和 pull request 来改进这些 skills。
 
 ## License
 
