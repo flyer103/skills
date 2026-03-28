@@ -6,6 +6,7 @@
 
 - [Android 控制 (android-control)](#android-control)
 - [知识探索 (knowledge-explorer)](#knowledge-explorer)
+- [xurl 最佳实践 (xurl-best-practices)](#xurl-best-practices)
 - [使用方式](#使用方式)
 
 ## Skills
@@ -63,6 +64,40 @@
 学习 Kubernetes 架构
 研究 Rust 所有权机制
 ```
+
+### xurl 最佳实践 (xurl-best-practices)
+
+xurl CLI 工具的最佳实践和指南，包括速率限制、内容指南、最佳发布时间和错误处理。
+
+**触发方式**：
+- "使用 xurl 发布"
+- "Twitter API 最佳实践"
+- "避免 Twitter API 速率限制"
+
+**核心特性**：
+- 🎯 避免速率限制（30分钟间隔，每日50条推文）
+- ✅ 内容过滤规则（避免过多 emoji）
+- ⏰ 最佳发布时间（北京时间）
+- 📝 内容模板和示例
+- 🔧 错误处理和恢复策略
+- 📊 监控和性能指标
+
+**前提要求**：
+- 已安装 xurl CLI 工具
+- 已配置 X (Twitter) API 凭证
+
+**示例**：
+```
+使用 xurl 发布新项目
+如何避免 Twitter 速率限制
+最佳发布时间策略
+```
+
+**关键规则**：
+- 每条推文最多 1-2 个 emoji
+- 两次发布间隔至少 30 分钟
+- 避免营销语言和过度格式化
+- 自然对话语气，提供有价值的内容
 
 ## 使用方式
 
