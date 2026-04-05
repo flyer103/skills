@@ -6,6 +6,7 @@
 
 - [Android 控制 (android-control)](#android-control)
 - [知识探索 (knowledge-explorer)](#knowledge-explorer)
+- [定时任务标准 (cron-task-spec)](#cron-task-spec)
 - [xurl 最佳实践 (xurl-best-practices)](#xurl-best-practices)
 - [使用方式](#使用方式)
 
@@ -63,6 +64,44 @@
 探索 React 18
 学习 Kubernetes 架构
 研究 Rust 所有权机制
+```
+
+### 定时任务标准 (cron-task-spec)
+
+基于 SMART-ER 原则的 OpenClaw 定时任务标准规范，用于任务的创建、更新和校验。
+
+**触发方式**：
+- "创建定时任务"
+- "更新定时任务"
+- "校验任务标准"
+- "任务规范"
+- "SPEC"
+
+**核心特性**：
+- 📋 基于 SMART-ER 原则设计（Specific, Measurable, Achievable, Relevant, Time-bound, Evaluated, Reviewed）
+- 🔍 自动校验任务是否符合标准（最多3次循环）
+- 📊 提供统一的任务描述模板
+- ✅ 完整的校验清单（6项检查）
+- 📈 效果评估指标（执行成功率、推送成功率、执行时长）
+- 🎯 严格按任务要求执行，不添加未提及的内容
+
+**核心流程**：
+```
+数据采集 → 存储到数据库 → 推送到 Discord Channel
+```
+
+**校验流程**：
+```
+新任务/更新 → 执行一次 → 检查标准 → [不通过] → 分析原因 → 完善任务 → 重复（最多3次）
+                                         ↓ [通过]
+                                    通知用户
+```
+
+**示例**：
+```
+创建定时任务：每天早上9点推送天气预报
+校验任务是否符合标准
+按照 SPEC 创建新的推送任务
 ```
 
 ### xurl 最佳实践 (xurl-best-practices)
